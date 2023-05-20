@@ -18,11 +18,10 @@ function getComputerChoice(rps) {
     return computerChoice;
 }
 
-const computerSelection = getComputerChoice(rockPaperScissors);
 
 function letsPlay() {
     let playerSelection = prompt('Rock, Paper, or Scissors?').toLowerCase();
-    
+    let computerSelection = getComputerChoice(rockPaperScissors);
     return game(playerSelection,computerSelection) + console.log(`computer chose ${computerSelection}` + ` Player Score: ${playerScore} Computer Score: ${computerScore} Turns Played: ${turns}`);
  }
 
