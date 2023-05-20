@@ -1,7 +1,3 @@
-//create function that returns rock paper or scissors: Array?
-//function that plays a single round of RPS
-
-
 const rockPaperScissors = [
     'rock',
     'paper',
@@ -17,7 +13,6 @@ function getComputerChoice(rps) {
     const computerChoice = rps[randomChoice];
     return computerChoice;
 }
-
 
 function letsPlay() {
     let playerSelection = prompt('Rock, Paper, or Scissors?').toLowerCase();
@@ -61,27 +56,3 @@ function game(playerSelection, computerSelection) {
         }
 }
 }
-
-
-
-//function letsPlay(playerSelection, computerSelection) {
-//    if (playerSelection === 'rock' && computerSelection === 'paper') {
-//        console.log('You Lose! paper beats rock!');
-//    } else if (playerSelection === 'rock' && computerSelection === 'rock') {
-//        console.log('Tie! Try again!');
-//    } else if (playerSelection === 'rock' && computerSelection === 'scissors') {
-//        console.log('You Win! rock beats scissors!');
-//    } else if (playerSelection === 'paper' && computerSelection === 'rock') {
-//        console.log('You Win! paper beats rock!');
-//    } else if (playerSelection === 'paper' && computerSelection === 'paper') {
-//        console.log('Tie! Try again!');
-//    } else if (playerSelection === 'paper' && computerSelection === 'scissors') {
-//        console.log('You Lose! scissors beats paper!');
-//    } else if (playerSelection === 'scissors' && computerSelection === 'rock') {
-//        console.log('You Lose! rock beats scissors!');
-//    } else if (playerSelection === 'scissors' && computerSelection === 'scissors') {
-//        console.log('Tie! Try again!');
-//    } else if (playerSelection === 'scissors' && computerSelection === 'paper') {
-//        console.log('You Win! scissors beats paper!');
-//    }
-//}
