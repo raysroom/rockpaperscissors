@@ -13,12 +13,12 @@ function getComputerChoice(rps) {
     const computerChoice = rps[randomChoice];
     return computerChoice;
 }
-
+// function used to play against computer in the console
 function letsPlay() {
     let playerSelection = prompt('Rock, Paper, or Scissors?').toLowerCase();
     let computerSelection = getComputerChoice(rockPaperScissors);
     return game(playerSelection,computerSelection) + console.log(`computer chose ${computerSelection}` + ` Player Score: ${playerScore} Computer Score: ${computerScore} Turns Played: ${turns}`);
- }
+}
 
 function game(playerSelection, computerSelection) {
     if(playerSelection === computerSelection){
@@ -55,4 +55,20 @@ function game(playerSelection, computerSelection) {
             turns++;
         }
 }
+}
+// added a way to click rock paper or scissors on the webpage to play a round of the game
+function rock() {
+    let playerSelection = 'rock';
+    let computerSelection = getComputerChoice(rockPaperScissors);
+    return game(playerSelection,computerSelection) + console.log(`computer chose ${computerSelection}` + ` Player Score: ${playerScore} Computer Score: ${computerScore} Turns Played: ${turns}`);
+}
+function paper() {
+    let playerSelection = 'paper';
+    let computerSelection = getComputerChoice(rockPaperScissors);
+    return game(playerSelection,computerSelection) + console.log(`computer chose ${computerSelection}` + ` Player Score: ${playerScore} Computer Score: ${computerScore} Turns Played: ${turns}`);
+}
+function scissors() {
+    let playerSelection = 'scissors';
+    let computerSelection = getComputerChoice(rockPaperScissors);
+    return game(playerSelection,computerSelection) + console.log(`computer chose ${computerSelection}` + ` Player Score: ${playerScore} Computer Score: ${computerScore} Turns Played: ${turns}`);
 }

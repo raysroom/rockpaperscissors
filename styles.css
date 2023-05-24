@@ -1,0 +1,34 @@
+body {
+    background-color: goldenrod;
+}
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1 0 16px;
+    background-color: rgba(100, 100, 100, 50);
+    color: aliceblue;
+    padding: 2px;
+    border-radius: 4px;
+}
+
+.choices{
+    display: flex;
+    flex: auto;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+.choice {
+    background-color: rgba(100, 100, 100, 50);
+    border-radius: 4px;
+    color: aliceblue;
+    padding: 4px;
+}
+button {
+    background:none;
+    color: inherit;
+    border: none;
+    padding: 6px;
+    font: inherit;
+}
